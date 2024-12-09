@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "chatgpt-analysis"
+version = "0.1.0"
+description = "Analyze ChatGPT conversation history"
+authors = ["Greg Ceccarelli <gregce@gmail.com>"]
+packages = [{include = "chatgpt_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0.0"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+
+[tool.poetry.scripts]
+analyze = "chatgpt_analysis.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
